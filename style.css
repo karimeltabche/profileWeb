@@ -1,0 +1,176 @@
+html{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	margin:auto;	
+	font-family: Helvetica, "Raleway", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+}
+
+header{
+	padding-top:80px;
+	padding-bottom: 10px;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 2em;
+	background: #3498DB;
+	font-weight: normal;
+}
+
+header h1{
+	font-size: 4.0rem;
+	line-height: 1.2;
+	letter-spacing: -.1rem;
+}
+
+header h3{
+	font-size: 200%;
+}
+
+header h1, h2, h3, h4, h5, h6{
+	font-weight: 300;
+}
+
+main{
+	margin: 0 auto;
+	width: 100%;
+	padding: 1em ;
+	text-align: left;
+	max-width: 80%;
+}
+
+main p{
+	font-weight: 300;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+
+main h2{
+	color: #3498DB;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+main h4{
+	color: #3498DB;
+	font-size: 2.4rem;
+    line-height: 1.35;
+    letter-spacing: -.08rem;
+    text-align: center;
+}
+
+.line {
+    margin: auto;
+    height: 1px;
+    width: 80%;
+	
+    background-color: #3498DB;
+	margin-top: 2em;
+	margin-bottom: 2em;
+ }
+
+#resume{
+	width: 100%;
+	height: 60em;
+	margin: 0 auto;
+}
+
+#nav_menu {
+	margin: auto;
+	padding-top: 2em;
+	width:50%;
+	clear: left;
+}
+
+#footer{
+	font-size: 80%;
+}
+
+#nav_menu ul li a{
+	display: block;
+	width: 100%;
+	padding: .7em 0;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	color: #ffffff;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus{
+    color: white;
+	
+}
+
+#nav_menu ul{
+	list-style: none;
+	position: relative;
+	margin:auto;
+	padding: 0;
+}
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	
+}
+
+#nav_menu ul li{
+	float: left;
+	width: 25%;
+}
+
+#nav_menu ul li:hover > ul{
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	text-align: center;
+}
+
+#nav_menu ul ul li{
+	float: none;
+	margin:0;
+	padding:0;
+	width: 100%;
+	
+}
+
+#nav_menu > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+@media only screen and (max-width: 1000px) and (orientation: portrait){
+	#nav_menu ul li{
+		float: none;
+		font-size: 200%;
+		padding-top: 1em;
+	}
+
+	#nav_menu ul li a{
+		width: 400%;
+		text-align: center;
+		margin: auto;
+		
+	}
+	#nav_menu ul{
+		display: inline-block;
+		margin: auto;
+		padding-bottom: 3em;
+	}
+
+	header h3{
+		font-size: 250%;
+	}
+
+	main p{
+		font-size: 2em;
+	}
+
+	main h2{
+		font-size: 4em;
+	}
+}
